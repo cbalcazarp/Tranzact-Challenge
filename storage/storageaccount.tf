@@ -22,7 +22,7 @@ resource "azurerm_storage_account" "tr_stac" {
   account_replication_type = var.account_replication_type
 
   network_rules {
-    bypass                     = var.bypass[0]
+    bypass                     = [var.bypass]
     default_action             = var.default_action
     ip_rules                   = var.ip_rules
     virtual_network_subnet_ids = var.virtual_network_subnet_ids
