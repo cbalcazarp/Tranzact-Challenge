@@ -6,9 +6,9 @@ terraform {
     }
   }
 
-  provider "azurerm" { 
-    features {}
-  }
+  #provider "azurerm" { 
+  #  features {}
+  #}
 
   backend "azurerm" {
     resource_group_name  = "tranzact_RG"
