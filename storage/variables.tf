@@ -46,3 +46,8 @@ variable "owner_name" {
   type = string
   description = "This defines the owner's name"  
 }
+
+variable "bypass" {
+  type = string
+  description = "This specifies whether traffic is bypassed for Logging/Metrics/AzureServices"  
+}

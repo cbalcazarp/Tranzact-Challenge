@@ -26,6 +26,7 @@ module "storage_module" {
   container_access_type = "private"
   default_action = "Deny"
   ip_rules = ["190.237.28.62"]
+  bypass = "AzureServices"
   virtual_network_subnet_ids = [module.networking_module.subnet_id]
   owner_name = module.networking_module.owner_name
 }
