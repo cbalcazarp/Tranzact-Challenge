@@ -1,12 +1,3 @@
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "tranzact_RG"
-    storage_account_name = "tranzactcbalcazar4585"
-    container_name       = "tranzactcbalcazar4585container"
-    key                  = "terraform.tfstate"
-  }
-}  
-
 ## added new test comment
 ## added new comment 2
 
@@ -49,3 +40,12 @@ module "vault_module" {
   virtual_network_subnet_ids = [module.networking_module.subnet_id]
   owner_name = module.networking_module.owner_name
 }
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tranzact_RG"
+    storage_account_name = "tranzactcbalcazar4585"
+    container_name       = "tranzactcbalcazar4585container"
+    key                  = "terraform.tfstate"
+  }
+}  
