@@ -48,6 +48,6 @@ variable "owner_name" {
 }
 
 variable "bypass" {
-  type = string
+  type = set(string)
   description = "This specifies whether traffic is bypassed for Logging/Metrics/AzureServices"  
 }

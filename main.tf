@@ -26,7 +26,7 @@ module "storage_module" {
   container_access_type = "private"
   default_action = "Deny"
   ip_rules = ["190.237.28.62","4.0.0.0/8","13.0.0.0/8","20.0.0.0/8","23.0.0.0/8","40.0.0.0/8","51.0.0.0/8","52.0.0.0/8","65.0.0.0/8","68.0.0.0/8","70.0.0.0/8","74.0.0.0/8","94.0.0.0/8","98.0.0.0/8","104.0.0.0/8","108.0.0.0/8","131.0.0.0/8","134.0.0.0/8","137.0.0.0/8","138.0.0.0/8","157.0.0.0/8","168.0.0.0/8","172.0.0.0/8","191.0.0.0/8","199.0.0.0/8","204.0.0.0/8","207.0.0.0/8","208.0.0.0/8","209.0.0.0/8","213.0.0.0/8"]
-  bypass = "AzureServices"
+  bypass = ["AzureServices"]
   virtual_network_subnet_ids = [module.networking_module.subnet_id]
   owner_name = module.networking_module.owner_name
 }
