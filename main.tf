@@ -7,6 +7,8 @@
 #  }
 #}  
 
+## added new test comment
+
 module "networking_module" {
   source = "./networking"
   base_name = "tranzact"
