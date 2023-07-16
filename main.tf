@@ -8,6 +8,7 @@ terraform {
 }  
 
 ## added new test comment
+## added new comment 2
 
 module "networking_module" {
   source = "./networking"
